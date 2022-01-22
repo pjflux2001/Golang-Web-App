@@ -12,7 +12,7 @@ func helloWorldPage(w http.ResponseWriter, r *http.Request) {
 func main() {
 	http.HandleFunc("/", helloWorldPage)
 	//http.ListenAndServe("", nil)
-	http.ListenAndServeTLS("", "cert.pem", "key.pem", nil)
+	http.ListenAndServeTLS(":8080", "cert.pem", "key.pem", nil)
 	//go run $(go env GOROOT)/src/crypto/tls/generate_cert.go --host=localhost
 	// open ssl
 }
