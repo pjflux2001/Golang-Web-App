@@ -1,0 +1,18 @@
+<html>
+    <h1>{{ . }}</h1>
+    <form action="/login-submit">
+        <label for="username">User ID:</label><br>
+        <input type="text" id="username" name="username" value=""><br>
+        <label for="password">Password:</label><br>
+        <input type="text" id="password" name="password" value=""><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</html>
+
+<!--
+
+should be encrypted based on https://stackoverflow.com/questions/499591/are-https-urls-encrypted
+check docs for add functions etc. or check out my previous video
+other than html templating, there's also WASM for dynamic elements, comment if you want me to look into it
+
+-->
